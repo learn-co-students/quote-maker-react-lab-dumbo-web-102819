@@ -1,6 +1,6 @@
 import React from 'react';
-import { removeQuote, upvoteQuote, downvoteQuote } from '../actions/quotes'
-import { connect } from 'react-redux'
+// import { removeQuote, upvoteQuote, downvoteQuote } from '../actions/quotes'
+// import { connect } from 'react-redux'
 
 
 // const handleRemove = (event) => {
@@ -66,4 +66,6 @@ const QuoteCard = (props) => {
   </div>
   )
 }
-export default connect(state => ({ quotes: state.quotes }), { removeQuote, upvoteQuote, downvoteQuote })(QuoteCard);
+
+export default QuoteCard
+// export default connect(state => ({ quotes: state.quotes }), { removeQuote, upvoteQuote, downvoteQuote })(QuoteCard);
