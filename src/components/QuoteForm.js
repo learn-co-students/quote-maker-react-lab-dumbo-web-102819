@@ -19,7 +19,7 @@ class QuoteForm extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault()
-    let quoteObj = {...this.state, ...{ id: uuid() } }
+    let quoteObj = {...this.state, id: uuid() }
     this.props.addQuote(quoteObj)
     this.setState({
       content: '',
